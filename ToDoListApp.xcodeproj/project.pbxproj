@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4BE78852528988F00928767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE78842528988F00928767 /* AppDelegate.swift */; };
-		B4BE78872528988F00928767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE78862528988F00928767 /* SceneDelegate.swift */; };
-		B4BE78892528988F00928767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE78882528988F00928767 /* ViewController.swift */; };
-		B4BE788C2528988F00928767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BE788A2528988F00928767 /* Main.storyboard */; };
+		B4BE78892528988F00928767 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE78882528988F00928767 /* TaskListViewController.swift */; };
 		B4BE788F2528988F00928767 /* ToDoListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4BE788D2528988F00928767 /* ToDoListApp.xcdatamodeld */; };
 		B4BE78912528989400928767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BE78902528989400928767 /* Assets.xcassets */; };
 		B4BE78942528989400928767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BE78922528989400928767 /* LaunchScreen.storyboard */; };
+		B4BE789C25289B2C00928767 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE789B25289B2C00928767 /* NewTaskViewController.swift */; };
+		B4BE789D25289DE800928767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE78842528988F00928767 /* AppDelegate.swift */; };
+		B4BE789F2528A81300928767 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE789E2528A81300928767 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4BE78812528988F00928767 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BE78842528988F00928767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4BE78862528988F00928767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4BE78882528988F00928767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4BE788B2528988F00928767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4BE78882528988F00928767 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		B4BE788E2528988F00928767 /* ToDoListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListApp.xcdatamodel; sourceTree = "<group>"; };
 		B4BE78902528989400928767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4BE78932528989400928767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4BE78952528989400928767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4BE789B25289B2C00928767 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		B4BE789E2528A81300928767 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				B4BE78842528988F00928767 /* AppDelegate.swift */,
-				B4BE78862528988F00928767 /* SceneDelegate.swift */,
-				B4BE78882528988F00928767 /* ViewController.swift */,
-				B4BE788A2528988F00928767 /* Main.storyboard */,
+				B4BE78882528988F00928767 /* TaskListViewController.swift */,
+				B4BE789E2528A81300928767 /* StorageManager.swift */,
+				B4BE789B25289B2C00928767 /* NewTaskViewController.swift */,
 				B4BE78902528989400928767 /* Assets.xcassets */,
 				B4BE78922528989400928767 /* LaunchScreen.storyboard */,
 				B4BE78952528989400928767 /* Info.plist */,
@@ -130,7 +130,6 @@
 			files = (
 				B4BE78942528989400928767 /* LaunchScreen.storyboard in Resources */,
 				B4BE78912528989400928767 /* Assets.xcassets in Resources */,
-				B4BE788C2528988F00928767 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BE78892528988F00928767 /* ViewController.swift in Sources */,
-				B4BE78852528988F00928767 /* AppDelegate.swift in Sources */,
-				B4BE78872528988F00928767 /* SceneDelegate.swift in Sources */,
+				B4BE789D25289DE800928767 /* AppDelegate.swift in Sources */,
+				B4BE78892528988F00928767 /* TaskListViewController.swift in Sources */,
+				B4BE789F2528A81300928767 /* StorageManager.swift in Sources */,
+				B4BE789C25289B2C00928767 /* NewTaskViewController.swift in Sources */,
 				B4BE788F2528988F00928767 /* ToDoListApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B4BE788A2528988F00928767 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4BE788B2528988F00928767 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4BE78922528989400928767 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
